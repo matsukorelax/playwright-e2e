@@ -8,6 +8,49 @@
 
 このコードは、E2E（End-to-End）テストフレームワークであるPlaywrightを用いて、Webアプリケーションのログイン認証機能を自動テストするものです。具体的には、環境変数で指定したユーザー名とパスワードを用いてログインを試み、ログイン後のリダイレクト先URLと要素の表示状態を検証します。dotenvを利用して環境変数を読み込み、認証情報を安全に管理します。
 
+## セットアップと実行手順 (Getting Started)
+
+### 1. リポジトリのクローン
+
+```bash
+git clone https://github.com/matsukorelax/playwright-e2e.git
+cd playwright-e2e
+```
+
+### 2. 依存パッケージのインストール
+
+```bash
+npm install
+npx playwright install chromium
+```
+
+### 3. 環境変数の設定
+
+```bash
+cp .env.example .env
+```
+
+`.env` を編集して各値を設定してください。
+
+```
+BASE_URL=
+SAUCEDEMO_USERNAME=
+SAUCEDEMO_PASSWORD=
+```
+
+### 4. テストの実行
+
+```bash
+# 通常実行
+npx playwright test
+
+# ブラウザを表示しながら実行
+npx playwright test --headed
+
+# テストレポートの確認
+npx playwright show-report
+```
+
 ## 想定される利用シーン (Use Case)
 
 このテストコードは、以下のような状況で役立ちます。
