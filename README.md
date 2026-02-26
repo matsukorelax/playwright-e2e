@@ -1,6 +1,6 @@
 # Playwright ログイン認証 E2E テスト
 
-[![Playwright](https://img.shields.io/badge/Playwright-1.50.0-blue?logo=playwright)](https://playwright.dev/)
+[![Playwright](https://img.shields.io/badge/Playwright-1.58.2-blue?logo=playwright)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![dotenv](https://img.shields.io/badge/dotenv-17.x-blue)](https://www.npmjs.com/package/dotenv)
 
