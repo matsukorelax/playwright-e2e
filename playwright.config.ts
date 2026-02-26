@@ -6,7 +6,7 @@ dotenv.config();
 export default defineConfig({
   testDir: './tests',
   use: {
-    baseURL: 'https://www.saucedemo.com',
+    baseURL: process.env.BASE_URL,
     screenshot: 'only-on-failure',
   },
   projects: [
