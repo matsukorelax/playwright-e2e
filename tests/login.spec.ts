@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('正常ログイン: standard_user でログインし inventory ページへ遷移する', async ({ page }) => {
+test('正常ログイン: 有効なユーザーでログインし inventory ページへ遷移する', async ({ page }) => {
   await page.goto('/');
 
   await page.fill('#user-name', process.env.SAUCEDEMO_USERNAME!);
