@@ -8,6 +8,7 @@ export default defineConfig({
   use: {
     baseURL: process.env.BASE_URL,
     screenshot: 'only-on-failure',
+    video: (process.env.PLAYWRIGHT_VIDEO === 'on') ? 'on' : 'off',
   },
   projects: [
     {
